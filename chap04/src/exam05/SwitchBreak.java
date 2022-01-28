@@ -30,9 +30,7 @@ public class SwitchBreak {
 
 		switch (name) { // 7버전 이후
 
-		case "김유신":
-		case "이순신":
-		case "홍길동":
+		case "김유신": case "이순신": case "홍길동":
 			System.out.println("제 이름은 " + name + " 입니다.");
 			break;
 		default:
