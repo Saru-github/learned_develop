@@ -1,7 +1,7 @@
 package exam10;
 
 class Person {
-
+ 
 	private String name; // 이름
 	private int milID; // 군번
 	private int birthYear; // 년

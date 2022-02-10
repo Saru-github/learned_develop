@@ -1,5 +1,5 @@
 package exam09;
-
+ 
 class Person {
 
 	private String name; // 이름
