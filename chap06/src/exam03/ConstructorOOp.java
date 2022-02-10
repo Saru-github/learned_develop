@@ -1,7 +1,7 @@
 package exam03;
 
 class StudentScore { // 참조자료형
-
+  
 	// field (멤버변수)
 
 	String name;
