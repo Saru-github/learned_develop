@@ -1,7 +1,7 @@
 package exam04;
 
 class Buyer { // 참조자료형
-
+ 
 	// filed
 
 	String name;

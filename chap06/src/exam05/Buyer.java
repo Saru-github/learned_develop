@@ -1,5 +1,5 @@
 package exam05;
-
+ 
 public class Buyer { // 참조자료형
 
 	// filed

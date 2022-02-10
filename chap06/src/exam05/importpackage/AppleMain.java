@@ -1,7 +1,7 @@
 package exam05.importpackage;
 
 import exam05.Buyer;	// Ctrl + Shift + o (단축키)
- 
+  
 public class AppleMain {
 
 	public static void main(String[] args) {

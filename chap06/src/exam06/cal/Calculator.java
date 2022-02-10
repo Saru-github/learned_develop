@@ -1,5 +1,5 @@
 package exam06.cal;
-
+ 
 public class Calculator {
 
 	Adder adder;
