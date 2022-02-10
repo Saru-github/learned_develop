@@ -1,5 +1,5 @@
 package exam05;
-
+ 
 class Mart { // 참조자료형 (판매자)
 
 	// filed (멤버변수) -속성
