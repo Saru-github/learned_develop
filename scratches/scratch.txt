@@ -1,0 +1,8 @@
+py  C:\Users\heo_d\IdeaProjects\py
+  .idea
+    .gitignore
+    misc.xml
+    modules.xml
+  py.iml
+External Libraries
+Scratches and Consoles
