@@ -18,7 +18,6 @@ class ChatMsg:
 
 #%%
 from socket import *
-
 import pickle
 import time
 from chat import ChatMsg
@@ -37,13 +36,18 @@ class SendThread(threading.Thread):
         self.soc = soc
     def run(self):
         while True:
-            sMsg = input('입력: ')
-            chatmsg = pickle.dumps(ChatMsg(sMsg))
-            self.soc.send(chatmsg)
-
+            sMsg = input('입력: ')        # 3/hello
+            in_list = sMsg.split('/')    # ['3', 'hello']
+            chatmsg = None
+            if len(in_list)==1:          # 모두에게 보내는 메시지
+                chatmsg=ChatMsg(sMsg)
+            elif len(in_list)==2:
+                n, msg = in_list
+                chaatmsg = ChatMsg(msg, to=int(n))
+            self.soc.send(pickle.dumps(chatmsg))
 #%%
 clientSock = socket(AF_INET, SOCK_STREAM)  # 소켓 생성
-clientSock.connect(('127.0.0.1', 1124))    # 서버에 접속
+clientSock.connect(('192.168.0.178', 1124))    # 서버에 접속
 
 SendThread(clientSock).start()
 
