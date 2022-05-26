@@ -4,6 +4,9 @@ public class lv2_10718 {
 
 	public static void main(String[] args) {
 		
+		
+//		10718		
+		
 //		입력
 //		본 문제는 입력이 없다.
 //
