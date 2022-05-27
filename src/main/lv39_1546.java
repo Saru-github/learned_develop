@@ -8,6 +8,7 @@ public class lv39_1546 {
 	public static void main(String[] args) {
 
 		
+		
 //		1546
 //		
 //		입력
@@ -20,24 +21,25 @@ public class lv39_1546 {
 		
 		
 		Scanner sc = new Scanner(System.in);
-		int N = sc.nextInt();
-		long max = 0;
-		long arr[] = new long[N];
-		long sum = 0;
+		double max = 0;
+		double arr[] = new double[sc.nextInt()];
+		double sum = 0;
 		
-		for(int i = 0; i < N ; i++) {
-			int a = sc.nextInt();
-			arr[i] = a;
+		for(int i = 0; i < arr.length ; i++) {
+			arr[i] = sc.nextDouble();
 		}
 		
 		Arrays.sort(arr);
-		arr[N-1] = max;
 		
-		for(int i = 0; i < N; i++) {
-			sum += (long)arr[i]/max*100;
+		
+		for(int i = 0; i < arr.length; i++) {
+			
+			sum += ((arr[i] / arr[arr.length-1]) * 100);
+			
 		}
 		
-		System.out.println(sum/N);
+		System.out.println(sum/arr.length);
+		
+		
 	}
-
 }
