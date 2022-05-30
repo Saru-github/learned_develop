@@ -1,7 +1,5 @@
 # BaekJoon-Java
-
 20220525 ~
-
 Java review // https://www.acmicpc.net/step
 
 
