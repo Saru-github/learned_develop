@@ -122,3 +122,26 @@ function calculateKrAge(ageOfForeinger) {
 const krAge = calculateKrAge(age);
 
 console.log('한국나이: '+krAge+'세');
+
+
+const addResult = calculator.add(2, 5);
+const minusResult = calculator.minus(addResult, 10);
+const multipleResult = calculator.multiple(10, minusResult);
+const divideResult = calculator.division(multipleResult, addResult);
+const powerResult = calculator.power(divideResult, minusResult);
+
+const age1 = parseInt(prompt("How old are you?"));
+
+if(isNaN(age1) || age1 < 0){
+    console.log("Please write a  real positive number");
+} else if(age1 < 18){
+    console.log("You are too young.");
+} else if(age1 >= 18 && age1 <= 50) {
+    console.log("You can drink");
+} else if (age1 > 50 && age1 <=80){
+    console.log("you should exercise");
+} else if(age1 === 100){
+    console.log("wow you are wise");
+} else if(age > 80){
+    console.log("You can do whatever you want.");
+}
