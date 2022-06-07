@@ -57,3 +57,68 @@ let meFat = true;
 meFat = false
 
 console.log(meFat)
+
+
+const toBuy = ["potato", "pizza", "tomato"];
+
+console.log(toBuy);
+toBuy[2] = "water";
+console.log(toBuy);
+toBuy.push("meat");
+console.log(toBuy);
+
+const player1 = {
+    name: "DY",
+    age: 30,
+};
+
+console.log(player1)
+player1.name = "Deayoung";
+console.log(player1);
+player1.sexy = "soon";
+console.log(player1);
+
+
+function plus1(){
+    console(2+2);
+}
+
+const calculator = {
+    add: function(a, b){
+        console.log(a + b);
+        return a + b;
+    },
+    minus: function(a, b){
+        console.log(a - b);
+        return a - b;
+    },
+    multiple: function(a, b){
+        console.log(a * b);
+        return a * b;
+    },
+    division: function(a, b){
+        console.log(a / b);
+        return a / b;
+    },
+
+    power: function(a, b){
+        console.log(a ** b);
+        return a ** b;
+    }
+
+};
+
+calculator.add(5, 1);
+calculator.minus(5, 1);
+calculator.multiple(5, 1);
+calculator.division(5, 1);
+calculator.power(5, 1);
+
+const age = 96;
+function calculateKrAge(ageOfForeinger) {
+    return ageOfForeinger + 2;
+}
+
+const krAge = calculateKrAge(age);
+
+console.log('한국나이: '+krAge+'세');
