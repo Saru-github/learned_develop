@@ -1,4 +1,4 @@
-package chapter3.ch11;
+package chapter3.ch14;
 
 public class CompleteCalc extends Calculator {
 
@@ -15,9 +15,6 @@ public class CompleteCalc extends Calculator {
 		return num1 / num2;
 	}
 
-	public void showInfo() {
-		System.out.println("모두 구현했습니다.");
-	}
 	
 	
 }
