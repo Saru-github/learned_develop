@@ -24,6 +24,11 @@ public interface Calc {
 		return total;
 	}
 	
+	private void myMethod() {
+		System.out.println("myMethod");
+	}
 	
-
+	private static void myStaticMethod() {
+		System.out.println("myStaticMethod");
+	}
 }
