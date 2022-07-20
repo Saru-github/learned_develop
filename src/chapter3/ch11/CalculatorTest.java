@@ -13,6 +13,9 @@ public class CalculatorTest {
 		System.out.println(calc.times(num1, num2));
 		System.out.println(calc.devide(num1, num2));
 		
+		CompleteCalc calc2 = new CompleteCalc();
+		
+		
 
 	}
 
