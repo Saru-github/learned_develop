@@ -4,11 +4,13 @@ package com.example.server.controller;
 import com.example.server.dtd.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.servlet.ModelAndView;
 
 @Slf4j
 @RestController
 @RequestMapping("/api/server")
 public class ServerApiController {
+
 
     @GetMapping("")
     public User hello(@RequestParam String name, @RequestParam int age) {

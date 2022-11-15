@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>우리집</title>
+</head>
+<div class="container">
+    <section class="section" id="section-3">
+        <h1 style="text-align:center " > 오시는길 </h1>
+        <div id="map" style="width: 70%; height: 300px; margin:0 auto"></div>
+        <code id="snippet" class="snippet"></code>
+    </section>
+</div>
+
+<!-- 각자 발급받은 Client ID 값 넣기 -->
+<script type="text/javascript" src="https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=kvkaudiugu"></script>
+<script id="code">
+    var elluce = new naver.maps.LatLng(37.48947857099572, 126.83288552865669)
+    var map = new naver.maps.Map('map', {
+        center: new naver.maps.LatLng(37.48947857099572, 126.83288552865669),
+        zoom: 19,
+        minZoom: 10, //지도의 최소 줌 레벨
+        zoomControl: true, //줌 컨트롤의 표시 여부
+        zoomControlOptions: { //줌 컨트롤의 옵션
+            position: naver.maps.Position.TOP_RIGHT
+        }});
+    var marker = new naver.maps.Marker({
+        icon: {
+            url: "./icon/heart-icon.png",
+            scaledSize: new naver.maps.Size(30, 37),
+            origin: new naver.maps.Point(0, 0),
+        },
+        position: elluce,
+        map: map
+    });
+
+    var contentString = [
+        '<div class="iw_inner" style="padding:5px; margin: 5px 0px 5px 0px; width: 150px; height: 45px; text-align: center; ">',
+        '   <p style="foint-size: 2rem; margin: 0;">우리집</p>',
+        '   <p style="font-size: 0.8rem; margin: 0;">오류2동 대산아파트</p>',
+        '</div>'
+    ].join('');
+
+    var infowindow = new naver.maps.InfoWindow({
+        content: contentString,
+        maxWidth: 200,
+        height: 50,
+        backgroundColor: "white",
+        borderColor: "black",
+        borderWidth: 2,
+        disableAnchor: true,
+        textAlign: "center",
+        margin: "auto",
+
+        pixelOffset: new naver.maps.Point(0, -5)
+    });
+
+    naver.maps.Event.addListener(marker, "click", function(e) {
+        if (infowindow.getMap()) {
+            infowindow.close();
+        } else {
+            infowindow.open(map, marker);
+        }
+    });
+
+    infowindow.open(map, marker);
+</script>
+</body>
+</html>
