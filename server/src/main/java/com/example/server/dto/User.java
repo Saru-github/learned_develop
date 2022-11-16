@@ -1,4 +1,4 @@
-package com.example.server.dtd;
+package com.example.server.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

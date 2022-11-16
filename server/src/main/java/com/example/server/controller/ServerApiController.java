@@ -1,10 +1,9 @@
 package com.example.server.controller;
 
 
-import com.example.server.dtd.User;
+import com.example.server.dto.User;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.ModelAndView;
 
 @Slf4j
 @RestController
