@@ -1,5 +1,6 @@
 package org.example;
 
+@Rest
 public class MarketApi {
 
     public int connect(){
