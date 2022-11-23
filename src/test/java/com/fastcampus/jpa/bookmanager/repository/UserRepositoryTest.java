@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.*;
 
 import javax.transaction.Transactional;
+import java.time.LocalDateTime;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -71,18 +72,27 @@ class UserRepositoryTest {
     }
 
     @Test
-    void       select(){
-        System.out.println(userRepository.findByName("dy"));
+    void select(){
+//        System.out.println(userRepository.findByName("dy"));
+//        System.out.println("findByEmail: "+ userRepository.findByEmail("glglanother@gmail.com"));
+//        System.out.println("getByEmail: "+ userRepository.getByEmail("glglanother@gmail.com"));
+//        System.out.println("readByEmail: "+ userRepository.readByEmail("glglanother@gmail.com"));
+//        System.out.println("queryByEmail: "+ userRepository.queryByEmail("glglanother@gmail.com"));
+//        System.out.println("searchByEmail: "+ userRepository.searchByEmail("glglanother@gmail.com"));
+//        System.out.println("streamByEmail: "+ userRepository.streamByEmail("glglanother@gmail.com"));
+//        System.out.println("findUserByEmail: "+ userRepository.findUserByEmail("glglanother@gmail.com"));
+//        System.out.println("findTop1ByName: "+ userRepository.findTop1ByName("glglanother@gmail.com"));
+//        System.out.println("findFirst1ByName: "+ userRepository.findFirst1ByName("glglanother@gmail.com"));
+//        System.out.println("findFirst2ByName: "+ userRepository.findFirst2ByName("glglanother@gmail.com"));
+//        System.out.println("findByEmailAndName: "+ userRepository.findByEmailAndName("glgl@gmail.com","martin"));
+//        System.out.println("findByEmailOrName: "+ userRepository.findByEmailOrName("glgl@gmail.com","martin"));
+//        System.out.println("findByEmailOrName: "+ userRepository.findByCreatedAtAfter(LocalDateTime.now().minusDays(1L)));
+//        System.out.println("findByEmailOrName: "+ userRepository.findByIdAfter(4L));
+//        System.out.println("findByEmailOrName: "+ userRepository.findByCreatedAtGreaterThan(LocalDateTime.now().minusDays(1L)));
+//        System.out.println("findByCreatedAtGreaterThanEqual: "+ userRepository.findByCreatedAtGreaterThanEqual(LocalDateTime.now().minusDays(1L)));
+        System.out.println("findByCreatedAtBetween: "+ userRepository.findByCreatedAtBetween(LocalDateTime.now().minusDays(1L), LocalDateTime.now().plusDays(1L)));
+        System.out.println("findByIdBetween: "+ userRepository.findByIdBetween(2L, 4L));
 
-        System.out.println("findByEmail: "+ userRepository.findByEmail("glglanother@gmail.com"));
-        System.out.println("getByEmail: "+ userRepository.getByEmail("glglanother@gmail.com"));
-        System.out.println("readByEmail: "+ userRepository.readByEmail("glglanother@gmail.com"));
-        System.out.println("queryByEmail: "+ userRepository.queryByEmail("glglanother@gmail.com"));
-        System.out.println("searchByEmail: "+ userRepository.searchByEmail("glglanother@gmail.com"));
-        System.out.println("streamByEmail: "+ userRepository.streamByEmail("glglanother@gmail.com"));
-        System.out.println("findUserByEmail: "+ userRepository.findUserByEmail("glglanother@gmail.com"));
-        System.out.println("findTop1ByName: "+ userRepository.findTop1ByName("glglanother@gmail.com"));
-        System.out.println("findFirst1ByName: "+ userRepository.findFirst1ByName("glglanother@gmail.com"));
 
     }
 
