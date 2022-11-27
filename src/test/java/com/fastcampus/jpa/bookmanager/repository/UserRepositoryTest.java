@@ -63,11 +63,11 @@ class UserRepositoryTest {
 //        ExampleMatcher matcher = ExampleMatcher.matching().withMatcher("email", contains());
 //        Example<User> example = Example.of(user, matcher);
 //        userRepository.findAll(example).forEach(System.out::println);
-        userRepository.save(new User("david", "david@gmail.com"));
+//        userRepository.save(new User("david", "david@gmail.com"));
 
-        User user = userRepository.findById(1L).orElseThrow(RuntimeException::new);
-        user.setEmail("martin-update@gmail.com");
-        userRepository.save(user);
+//        User user = userRepository.findById(1L).orElseThrow(RuntimeException::new);
+//        user.setEmail("martin-update@gmail.com");
+//        userRepository.save(user);
 
     }
 
@@ -90,8 +90,17 @@ class UserRepositoryTest {
 //        System.out.println("findByEmailOrName: "+ userRepository.findByIdAfter(4L));
 //        System.out.println("findByEmailOrName: "+ userRepository.findByCreatedAtGreaterThan(LocalDateTime.now().minusDays(1L)));
 //        System.out.println("findByCreatedAtGreaterThanEqual: "+ userRepository.findByCreatedAtGreaterThanEqual(LocalDateTime.now().minusDays(1L)));
-        System.out.println("findByCreatedAtBetween: "+ userRepository.findByCreatedAtBetween(LocalDateTime.now().minusDays(1L), LocalDateTime.now().plusDays(1L)));
-        System.out.println("findByIdBetween: "+ userRepository.findByIdBetween(2L, 4L));
+//        System.out.println("findByCreatedAtBetween: "+ userRepository.findByCreatedAtBetween(LocalDateTime.now().minusDays(1L), LocalDateTime.now().plusDays(1L)));
+//        System.out.println("findByIdBetween: "+ userRepository.findByIdBetween(2L, 4L));
+//        System.out.println("findByIdIsNotNull: "+ userRepository.findByIdIsNotNull());
+//        System.out.println("findByNameIn: "+ userRepository.findByNameIn(Lists.newArrayList("martin","dennis")));
+//        System.out.println("findByNameStartingWith: "+ userRepository.findByNameStartingWith("mar"));
+//        System.out.println("findByNameEndingWith: "+ userRepository.findByNameEndingWith("tin"));
+//        System.out.println("findByNameContains: "+ userRepository.findByNameContains("art"));
+//        System.out.println("findByNameLike: "+ userRepository.findByNameLike("%art%"));
+        System.out.println("findUserByName: "+ userRepository.findUserByName("martin"));
+        System.out.println("findUserByNameIs: "+ userRepository.findUserByNameIs("martin"));
+        System.out.println("findUserByNameEquals: "+ userRepository.findUserByNameEquals("martin"));
 
 
     }
