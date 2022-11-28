@@ -98,8 +98,8 @@ class UserRepositoryTest {
 //        System.out.println("findByNameEndingWith: "+ userRepository.findByNameEndingWith("tin"));
 //        System.out.println("findByNameContains: "+ userRepository.findByNameContains("art"));
 //        System.out.println("findByNameLike: "+ userRepository.findByNameLike("%art%"));
-        System.out.println("findUserByName: "+ userRepository.findUserByName("martin"));
-        System.out.println("findUserByNameIs: "+ userRepository.findUserByNameIs("martin"));
+//        System.out.println("findUserByName: "+ userRepository.findUserByName("martin"));
+//        System.out.println("findUserByNameIs: "+ userRepository.findUserByNameIs("martin"));
         System.out.println("findUserByNameEquals: "+ userRepository.findUserByNameEquals("martin"));
 
 
