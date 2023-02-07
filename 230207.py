@@ -58,5 +58,5 @@ y,m,d = input().split('.')
 print(d, m, y, sep='-')
 
 # 6020 - '-'를 제외한 주민번호 13자리를 모두 붙여 출력한다.
-a,b = input().split('-')     # a, b = input().split('-')
-print(a+b)                   # print(a,b,sep='')
+a,b = input().split('-')    # a, b = input().split('-')
+print(a+b)                  # print(a,b,sep='')
