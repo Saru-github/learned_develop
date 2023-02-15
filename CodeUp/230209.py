@@ -80,6 +80,6 @@ print(int(a)<int(b))
 a,b = input().split()
 print(int(a)==int(b))
 
-# 6050 - 정수 2개 입력받아 비교하기3.
+# 6050 - 정수 2개 입력받아 비교하기3
 a,b = input().split()
 print(int(a)<=int(b))
