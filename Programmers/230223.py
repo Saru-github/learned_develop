@@ -7,4 +7,4 @@
 def solution(array):
     return sorted(array)[len(array) // 2]
 
-print(solution([9, -1, 0]))
+# print(solution([9, -1, 0]))
