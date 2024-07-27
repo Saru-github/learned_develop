@@ -1,18 +1,16 @@
-#제목2
-그 동안 개발을 배우며 습득 했던 내용 들을 한 레파지토리로 정리 합니다.
+###그 동안 개발을 배우며 습득 했던 내용 들을 한 레파지토리로 정리 합니다.
 
-BaekJoon-Java
-CodeUp-Python
-JS_basic
-Python_algorithm
-Python_prac
-Python_prac_main
-Training
-first-jpa-learn
-first-node-learn
-hello-spring
-java_review
-learned_develop
-spring_review
-spring_review_1
-springboot_review
+1. BaekJoon-Java
+2. CodeUp-Python
+3. JS_basic
+4. Python_algorithm
+5. Python_prac
+6. Python_prac_main
+7. Training
+8. first-jpa-learn
+9. first-node-learn
+10. hello-spring
+11. java_review
+12. spring_review
+13. spring_review_1
+14. springboot_review
