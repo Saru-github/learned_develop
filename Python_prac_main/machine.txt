@@ -1,0 +1,9 @@
+머신러닝 세팅
+
+from sklearn.datasets import load_iris # 데이터 로드
+from sklearn.model_selection import train_test_split # x와 y분할
+from sklearn.tree import DecisionTreeClassifier # 알고리즘
+from sklearn.metrics import accuracy_score #평가지표
+
+import  numpy as np
+import pandas as pd
